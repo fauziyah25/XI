@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .button{
+            border: 1px solid black;
+            border-radius: 45px;
+            padding: 10px 20px;
+        }
+
+        .unsubscribe{
+            background: black;
+            color: white;
+        }
+
+        .unsubscribe:hover{
+            background-color: rgb(179, 179, 179);
+        }
+
+        .subscribe{
+            background-color: rgb(229, 142, 255);
+        } 
+    </style>
+</head>
+<body>
+    <button id="tombol" class="button unsubscribe" onclick="subscribe()">Subscribe</button>
+    
+    <script>
+        function subscribe(){
+            document.getElementById("tombol").classList.replace("unsubscribe","subscribe");
+        }
+       </script>
+</body>
+</html>

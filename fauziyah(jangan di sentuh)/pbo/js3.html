@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ditekan{
+          background-color: red;
+          color: white;
+        }
+      </style>
+</head>
+<body>
+    <button onclick="klik()" id ="tombolSoal1">Buat Elemen Baru</button>
+    <p id="teksbaru"></p>
+
+    <img id="gambarID" src="https://i.pinimg.com/736x/72/d3/98/72d3985deca02be7a6500c493ac42e34.jpg" alt="Gambar">
+    <button onclick="imgbaru()" id="tombolSoal2">Ganti Gambar</button>
+    
+    <button onclick="warna()" id="tombolSoal3">Tekan Saya</button>
+
+    <script>
+        function klik(){
+            var klik1 = document.getElementById("teksbaru");
+            teksbaru.innerHTML +=  (klik1) = "<p> Fau Pacar Nanami </p>"
+        }
+        
+        function imgbaru(){
+            document.getElementById("gambarID").src = "https://i.pinimg.com/736x/b8/8f/47/b88f4797f1c930a861169505262072ae.jpg"
+        }
+
+        function warna(){
+            var warna1 = document.getElementById("tombolSoal3");
+            warna1.classList.add("ditekan")
+        }
+    </script>
+</body>
+</html>

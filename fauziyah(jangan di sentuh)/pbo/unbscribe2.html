@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .unsubcribe{
+            background: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .unsubcribe:hover{
+            background-color: aqua;
+            border: 30px;
+            padding: 10px;
+        }
+        .subscribe{
+            background-color: brown;
+            border-radius: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <button id="btn" class="tombol unsubcribe" onclick="subscribe()">Subscribe</button>
+   
+   <script>
+        var tombol =  document.getElementById("btn")
+        console.log(tombol.classList.contains("subscribe"))
+    function subscribe(){  
+        if(tombol.classList.contains("unsubcribe")){
+            tombol.classList.replace('subscribe','unsubcribe') 
+        }else if(tombol.classList.contains("subscribe")){
+            tombol.classList.replace('unsubcribe','subscribe')
+        }  
+    }
+   </script>
+</body>
+</html>
